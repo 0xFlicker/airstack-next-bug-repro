@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { init } from "@airstack/frames";
+
+init(process.env.AIRSTACK_API_KEY as string);
 
 export default function Home() {
   return (
